@@ -1,0 +1,7 @@
+RewriteEngine On
+
+Rewritecond ${SERVER_FILENAME} !-f
+Rewritecond ${SERVER_FILENAME} !-d
+
+RewriteRule ^(.+)$ index.php
+Options -Indexes
